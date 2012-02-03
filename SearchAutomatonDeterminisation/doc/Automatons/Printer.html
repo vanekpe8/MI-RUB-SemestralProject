@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Automatons::Printer</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/Printer_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/Printer.rb">lib/Printer.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-get_string_from_transitions">#get_string_from_transitions</a></li>
+					
+					<li><a href="#method-i-print_automaton">#print_automaton</a></li>
+					
+					<li><a href="#method-i-print_line_separator">#print_line_separator</a></li>
+					
+					<li><a href="#method-i-print_whole_line_separator">#print_whole_line_separator</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../bin/fileToSearch_txt.html">fileToSearch.txt</a></li>
+				
+					<li class="file"><a href="../bin/testInput_txt.html">testInput.txt</a></li>
+				
+					<li class="file"><a href="../test/fileToSearch_txt.html">fileToSearch.txt</a></li>
+				
+					<li class="file"><a href="../test/testInput_txt.html">testInput.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Automatons.html">Automatons</a></li>
+				
+					<li><a href="../Automatons/Automaton.html">Automatons::Automaton</a></li>
+				
+					<li><a href="../Automatons/DeterministicAutomaton.html">Automatons::DeterministicAutomaton</a></li>
+				
+					<li><a href="../Automatons/Label.html">Automatons::Label</a></li>
+				
+					<li><a href="../Automatons/Node.html">Automatons::Node</a></li>
+				
+					<li><a href="../Automatons/NodeDescriptor.html">Automatons::NodeDescriptor</a></li>
+				
+					<li><a href="../Automatons/NonDeterministicAutomaton.html">Automatons::NonDeterministicAutomaton</a></li>
+				
+					<li><a href="../Automatons/Printer.html">Automatons::Printer</a></li>
+				
+					<li><a href="../Automatons/SearchListener.html">Automatons::SearchListener</a></li>
+				
+					<li><a href="../Automatons/Transition.html">Automatons::Transition</a></li>
+				
+					<li><a href="../AlphabetManagement.html">AlphabetManagement</a></li>
+				
+					<li><a href="../AlphabetManagement/Alphabet.html">AlphabetManagement::Alphabet</a></li>
+				
+					<li><a href="../AlphabetManagement/AlphabetItem.html">AlphabetManagement::AlphabetItem</a></li>
+				
+					<li><a href="../InputHandling.html">InputHandling</a></li>
+				
+					<li><a href="../InputHandling/Input.html">InputHandling::Input</a></li>
+				
+					<li><a href="../InputHandling/InputLoader.html">InputHandling::InputLoader</a></li>
+				
+					<li><a href="../Queues.html">Queues</a></li>
+				
+					<li><a href="../Queues/NodeQueue.html">Queues::NodeQueue</a></li>
+				
+					<li><a href="../SearchAutomatonDeterminisation.html">SearchAutomatonDeterminisation</a></li>
+				
+					<li><a href="../SearchAutomatonDeterminisation/MainClass.html">SearchAutomatonDeterminisation::MainClass</a></li>
+				
+					<li><a href="../AlphabetTest.html">AlphabetTest</a></li>
+				
+					<li><a href="../AutomatonsTest.html">AutomatonsTest</a></li>
+				
+					<li><a href="../InputTest.html">InputTest</a></li>
+				
+					<li><a href="../NodeTest.html">NodeTest</a></li>
+				
+					<li><a href="../PrinterTest.html">PrinterTest</a></li>
+				
+					<li><a href="../TestListener.html">TestListener</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Automatons::Printer</h1>
+
+		<div id="description">
+			<p>
+This class can print an <a href="Automaton.html">Automaton</a> to the
+standard output. The automaton is printed as a table of transitions.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(alphabet)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new instance of <a href="Printer.html">Printer</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Printer.rb, line 23</span>
+23:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">alphabet</span>)
+24:       <span class="ruby-ivar">@alphabet</span> = <span class="ruby-identifier">alphabet</span>
+25:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="print-automaton-method" class="method-detail ">
+				<a name="method-i-print_automaton"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">print_automaton</span><span
+						class="method-args">(automaton)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Prints the given automaton
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="print-automaton-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Printer.rb, line 28</span>
+28:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">print_automaton</span>(<span class="ruby-identifier">automaton</span>)
+29:       <span class="ruby-identifier">maxLength</span> = <span class="ruby-value">0</span>
+30:       <span class="ruby-comment cmt">#p automaton.size</span>
+31:       <span class="ruby-identifier">automaton</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+32:         <span class="ruby-comment cmt">#p &quot;debug (cycle 1): #{index}&quot;</span>
+33:         <span class="ruby-identifier">node</span> = <span class="ruby-identifier">automaton</span>.<span class="ruby-identifier">getNodeAt</span>(<span class="ruby-identifier">index</span>)
+34:         <span class="ruby-identifier">str</span> = <span class="ruby-identifier">node</span>.<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">to_s</span>
+35:         <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+36:           <span class="ruby-ivar">@alphabet</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+37:             <span class="ruby-identifier">transitions</span> = <span class="ruby-identifier">node</span>.<span class="ruby-identifier">getTransitionsFor</span>(<span class="ruby-identifier">item</span>)
+38:             <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">transitions</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>)
+39:               <span class="ruby-identifier">str</span> = <span class="ruby-identifier">get_string_from_transitions</span>(<span class="ruby-identifier">transitions</span>)
+40:             <span class="ruby-keyword kw">end</span>
+41:           <span class="ruby-keyword kw">end</span>
+42:         <span class="ruby-keyword kw">end</span>
+43:         <span class="ruby-identifier">maxLength</span> = <span class="ruby-identifier">str</span>.<span class="ruby-identifier">length</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">maxLength</span>
+44:       <span class="ruby-keyword kw">end</span>
+45:       
+46:       <span class="ruby-identifier">print_line_separator</span>(<span class="ruby-identifier">maxLength</span><span class="ruby-operator">+</span><span class="ruby-value">2</span>,<span class="ruby-value str">' '</span>)
+47:       
+48:       
+49:       <span class="ruby-ivar">@alphabet</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+50:         <span class="ruby-identifier">print</span> <span class="ruby-identifier">fixed_string</span>(<span class="ruby-identifier">item</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-identifier">maxLength</span>,<span class="ruby-keyword kw">true</span>)
+51:         <span class="ruby-identifier">print</span> <span class="ruby-value str">'|'</span>
+52:       <span class="ruby-keyword kw">end</span>
+53:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+54:       <span class="ruby-identifier">print_whole_line_separator</span>(<span class="ruby-identifier">maxLength</span>, <span class="ruby-ivar">@alphabet</span>.<span class="ruby-identifier">size</span>)
+55:       <span class="ruby-identifier">automaton</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">node_index</span><span class="ruby-operator">|</span>
+56:         <span class="ruby-identifier">node</span> = <span class="ruby-identifier">automaton</span>.<span class="ruby-identifier">getNodeAt</span>(<span class="ruby-identifier">node_index</span>)
+57:         <span class="ruby-identifier">print</span> <span class="ruby-identifier">fixed_string</span>(<span class="ruby-identifier">node</span>.<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">to_s</span>,<span class="ruby-identifier">maxLength</span><span class="ruby-operator">+</span><span class="ruby-value">2</span>)
+58:         <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;|&quot;</span>
+59:         <span class="ruby-ivar">@alphabet</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+60:           <span class="ruby-identifier">transitions</span> = <span class="ruby-identifier">node</span>.<span class="ruby-identifier">getTransitionsFor</span>(<span class="ruby-identifier">item</span>)
+61:           <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">transitions</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">transitions</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+62:             <span class="ruby-identifier">print</span> <span class="ruby-identifier">fixed_string</span>(<span class="ruby-value str">&quot;&quot;</span>,<span class="ruby-identifier">maxLength</span>)
+63:           <span class="ruby-keyword kw">else</span>
+64:             <span class="ruby-identifier">str</span> = <span class="ruby-value str">&quot;&quot;</span>
+65:             <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">transitions</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>)
+66:               <span class="ruby-identifier">str</span> = <span class="ruby-identifier">get_string_from_transitions</span>(<span class="ruby-identifier">transitions</span>).<span class="ruby-identifier">delete</span>(<span class="ruby-value str">&quot;[]&quot;</span>)
+67:             <span class="ruby-keyword kw">else</span>
+68:               <span class="ruby-identifier">str</span> = <span class="ruby-identifier">transitions</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">targetNode</span>.<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value str">&quot;[]&quot;</span>)
+69:             <span class="ruby-keyword kw">end</span>
+70:             <span class="ruby-comment cmt">#transitions.each_with_index do |transition, tr_index|</span>
+71:             <span class="ruby-comment cmt">#  str = str + &quot;,&quot; if(tr_index &gt; 0)</span>
+72:             <span class="ruby-comment cmt">#  str = str + transition.targetNode.descriptor.to_s.delete(&quot;[]&quot;)</span>
+73:             <span class="ruby-comment cmt">#end</span>
+74:             <span class="ruby-identifier">print</span> <span class="ruby-identifier">fixed_string</span>(<span class="ruby-identifier">str</span>, <span class="ruby-identifier">maxLength</span>)
+75:           <span class="ruby-keyword kw">end</span>
+76:           <span class="ruby-identifier">print</span> <span class="ruby-value str">'|'</span>
+77:         <span class="ruby-keyword kw">end</span>
+78:         <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+79:         <span class="ruby-identifier">print_whole_line_separator</span>(<span class="ruby-identifier">maxLength</span>,<span class="ruby-ivar">@alphabet</span>.<span class="ruby-identifier">size</span>)
+80:       <span class="ruby-keyword kw">end</span>
+81:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="get-string-from-transitions-method" class="method-detail ">
+				<a name="method-i-get_string_from_transitions"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_string_from_transitions</span><span
+						class="method-args">(transitions)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Prints a string, consisting of descriptors of target nodes of all
+transitions
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-string-from-transitions-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Printer.rb, line 104</span>
+104:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_string_from_transitions</span>(<span class="ruby-identifier">transitions</span>)
+105:       <span class="ruby-identifier">id_arr</span> = []
+106:       <span class="ruby-identifier">index</span> = <span class="ruby-value">0</span>
+107:       <span class="ruby-identifier">transitions</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">transition</span><span class="ruby-operator">|</span>
+108:         <span class="ruby-identifier">labels</span> = <span class="ruby-identifier">transition</span>.<span class="ruby-identifier">targetNode</span>.<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">labels</span>.<span class="ruby-identifier">to_a</span>
+109:         <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">label</span><span class="ruby-operator">|</span>
+110:           <span class="ruby-identifier">id_arr</span>[<span class="ruby-identifier">index</span>] = <span class="ruby-identifier">label</span>.<span class="ruby-identifier">id</span>
+111:           <span class="ruby-identifier">index</span> = <span class="ruby-identifier">index</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+112:         <span class="ruby-keyword kw">end</span>
+113:       <span class="ruby-keyword kw">end</span>
+114:       <span class="ruby-identifier">id_arr</span> = <span class="ruby-identifier">id_arr</span>.<span class="ruby-identifier">sort</span>
+115:       <span class="ruby-identifier">res</span> = <span class="ruby-value str">&quot;[&quot;</span>
+116:       <span class="ruby-identifier">id_arr</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">id</span>,<span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+117:         <span class="ruby-identifier">res</span> = <span class="ruby-identifier">res</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;,&quot;</span> <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)
+118:         <span class="ruby-identifier">res</span> = <span class="ruby-identifier">res</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">id</span>.<span class="ruby-identifier">to_s</span>
+119:       <span class="ruby-keyword kw">end</span>
+120:       <span class="ruby-identifier">res</span> = <span class="ruby-identifier">res</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;]&quot;</span>
+121:       <span class="ruby-identifier">res</span>
+122:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="print-line-separator-method" class="method-detail ">
+				<a name="method-i-print_line_separator"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">print_line_separator</span><span
+						class="method-args">(width, filling='-')</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Prints a &#8216;filling&#8217; &#8216;width&#8217; times followed by
+character &#8217;|&#8217; (column separator)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="print-line-separator-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Printer.rb, line 86</span>
+86:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">print_line_separator</span>(<span class="ruby-identifier">width</span>, <span class="ruby-identifier">filling</span>=<span class="ruby-value str">'-'</span>)
+87:       <span class="ruby-identifier">width</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span>
+88:         <span class="ruby-identifier">print</span> <span class="ruby-identifier">filling</span>
+89:       <span class="ruby-keyword kw">end</span>
+90:       <span class="ruby-identifier">print</span> <span class="ruby-value str">'|'</span>
+91:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="print-whole-line-separator-method" class="method-detail ">
+				<a name="method-i-print_whole_line_separator"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">print_whole_line_separator</span><span
+						class="method-args">(col_width, alphabet_size)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Prints a line separator accross the whole table
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="print-whole-line-separator-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Printer.rb, line 94</span>
+ 94:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">print_whole_line_separator</span>(<span class="ruby-identifier">col_width</span>, <span class="ruby-identifier">alphabet_size</span>)
+ 95:       <span class="ruby-identifier">print_line_separator</span>(<span class="ruby-identifier">col_width</span><span class="ruby-operator">+</span><span class="ruby-value">2</span>)
+ 96:       <span class="ruby-identifier">alphabet_size</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+ 97:         <span class="ruby-identifier">print_line_separator</span>(<span class="ruby-identifier">col_width</span>)
+ 98:       <span class="ruby-keyword kw">end</span>
+ 99:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+100:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

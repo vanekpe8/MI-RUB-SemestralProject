@@ -1,0 +1,3 @@
+a b c
+abba|bbb|aaba
+fileToSearch.txt

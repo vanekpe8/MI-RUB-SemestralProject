@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Automatons::DeterministicAutomaton</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/Automatons_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/Automatons.rb">lib/Automatons.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="Automaton.html">Automatons::Automaton</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-beginSearch">#beginSearch</a></li>
+					
+					<li><a href="#method-i-changeState">#changeState</a></li>
+					
+					<li><a href="#method-i-create">#create</a></li>
+					
+					<li><a href="#method-i-superInit">#superInit</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../bin/fileToSearch_txt.html">fileToSearch.txt</a></li>
+				
+					<li class="file"><a href="../bin/testInput_txt.html">testInput.txt</a></li>
+				
+					<li class="file"><a href="../test/fileToSearch_txt.html">fileToSearch.txt</a></li>
+				
+					<li class="file"><a href="../test/testInput_txt.html">testInput.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Automatons.html">Automatons</a></li>
+				
+					<li><a href="../Automatons/Automaton.html">Automatons::Automaton</a></li>
+				
+					<li><a href="../Automatons/DeterministicAutomaton.html">Automatons::DeterministicAutomaton</a></li>
+				
+					<li><a href="../Automatons/Label.html">Automatons::Label</a></li>
+				
+					<li><a href="../Automatons/Node.html">Automatons::Node</a></li>
+				
+					<li><a href="../Automatons/NodeDescriptor.html">Automatons::NodeDescriptor</a></li>
+				
+					<li><a href="../Automatons/NonDeterministicAutomaton.html">Automatons::NonDeterministicAutomaton</a></li>
+				
+					<li><a href="../Automatons/Printer.html">Automatons::Printer</a></li>
+				
+					<li><a href="../Automatons/SearchListener.html">Automatons::SearchListener</a></li>
+				
+					<li><a href="../Automatons/Transition.html">Automatons::Transition</a></li>
+				
+					<li><a href="../AlphabetManagement.html">AlphabetManagement</a></li>
+				
+					<li><a href="../AlphabetManagement/Alphabet.html">AlphabetManagement::Alphabet</a></li>
+				
+					<li><a href="../AlphabetManagement/AlphabetItem.html">AlphabetManagement::AlphabetItem</a></li>
+				
+					<li><a href="../InputHandling.html">InputHandling</a></li>
+				
+					<li><a href="../InputHandling/Input.html">InputHandling::Input</a></li>
+				
+					<li><a href="../InputHandling/InputLoader.html">InputHandling::InputLoader</a></li>
+				
+					<li><a href="../Queues.html">Queues</a></li>
+				
+					<li><a href="../Queues/NodeQueue.html">Queues::NodeQueue</a></li>
+				
+					<li><a href="../SearchAutomatonDeterminisation.html">SearchAutomatonDeterminisation</a></li>
+				
+					<li><a href="../SearchAutomatonDeterminisation/MainClass.html">SearchAutomatonDeterminisation::MainClass</a></li>
+				
+					<li><a href="../AlphabetTest.html">AlphabetTest</a></li>
+				
+					<li><a href="../AutomatonsTest.html">AutomatonsTest</a></li>
+				
+					<li><a href="../InputTest.html">InputTest</a></li>
+				
+					<li><a href="../NodeTest.html">NodeTest</a></li>
+				
+					<li><a href="../PrinterTest.html">PrinterTest</a></li>
+				
+					<li><a href="../TestListener.html">TestListener</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Automatons::DeterministicAutomaton</h1>
+
+		<div id="description">
+			<p>
+This class represents a deterministic search automaton. It is built from <a
+href="NonDeterministicAutomaton.html">NonDeterministicAutomaton</a> and
+provides methods for continuous state changing. It also uses a listener,
+which is notified every time, automaton reaches some of its final states.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(non_deterministic_automaton, alphabet)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new instance of <a
+href="DeterministicAutomaton.html">DeterministicAutomaton</a> from <a
+href="NonDeterministicAutomaton.html">NonDeterministicAutomaton</a> and an
+Alphabet
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Automatons.rb, line 104</span>
+104:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">non_deterministic_automaton</span>, <span class="ruby-identifier">alphabet</span>)
+105:       <span class="ruby-identifier">superInit</span>(<span class="ruby-identifier">alphabet</span>)
+106:       <span class="ruby-ivar">@listener</span> = <span class="ruby-keyword kw">nil</span>
+107:       <span class="ruby-ivar">@index</span> = <span class="ruby-value">0</span>
+108:       <span class="ruby-identifier">queue</span> = <span class="ruby-constant">NodeQueue</span>.<span class="ruby-identifier">new</span>
+109:       <span class="ruby-identifier">desc</span> = <span class="ruby-constant">NodeDescriptor</span>.<span class="ruby-identifier">new</span>
+110:       <span class="ruby-identifier">desc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>))
+111:       <span class="ruby-ivar">@node0</span> = <span class="ruby-identifier">addNode</span>(<span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">desc</span>))
+112:       <span class="ruby-identifier">queue</span>.<span class="ruby-identifier">enqueue</span>(<span class="ruby-ivar">@node0</span>)
+113:       <span class="ruby-identifier">create</span>(<span class="ruby-identifier">non_deterministic_automaton</span>, <span class="ruby-identifier">queue</span>)
+114:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="DeterministicAutomaton.html#method-i-superInit">superInit</a>
+				</div>
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="begin-earch-method" class="method-detail ">
+				<a name="method-i-beginSearch"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">beginSearch</span><span
+						class="method-args">(listener)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Initializes search phase and sets a listener. The listener must respond to
+method &#8216;report&#8217; with arguments &#8216;pattern&#8217; and
+&#8216;index&#8217;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="begin-earch-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Automatons.rb, line 118</span>
+118:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">beginSearch</span>(<span class="ruby-identifier">listener</span>)
+119:       <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;Wrong listener used.&quot;</span> <span class="ruby-keyword kw">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">listener</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:report</span>))
+120:       <span class="ruby-ivar">@listener</span> = <span class="ruby-identifier">listener</span>
+121:       <span class="ruby-ivar">@index</span> = <span class="ruby-value">0</span>
+122:       <span class="ruby-ivar">@currentState</span> = <span class="ruby-ivar">@node0</span>
+123:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="change-tate-method" class="method-detail ">
+				<a name="method-i-changeState"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">changeState</span><span
+						class="method-args">(alphabetItem)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Given an AlphabetItem (alphabet symbol), this method changes state of this
+automaton. It also notifies associated listener when final state is
+reached.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="change-tate-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Automatons.rb, line 127</span>
+127:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">changeState</span>(<span class="ruby-identifier">alphabetItem</span>)
+128:       <span class="ruby-comment cmt">#p &quot;changing state for #{alphabetItem}&quot;</span>
+129:       <span class="ruby-ivar">@currentState</span> = <span class="ruby-ivar">@currentState</span>.<span class="ruby-identifier">getTransitionsFor</span>(<span class="ruby-identifier">alphabetItem</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">targetNode</span>
+130:       <span class="ruby-comment cmt">#p &quot;state changed successfully&quot;</span>
+131:       <span class="ruby-keyword kw">if</span>(<span class="ruby-ivar">@currentState</span>.<span class="ruby-identifier">finalPattern</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">nil</span>)
+132:         <span class="ruby-identifier">raise</span> <span class="ruby-value str">'No listener specified. &quot;beginSearch&quot; method must be called at the beginning of the search.'</span> <span class="ruby-keyword kw">if</span>(<span class="ruby-ivar">@listener</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+133:         <span class="ruby-ivar">@listener</span>.<span class="ruby-identifier">report</span>(<span class="ruby-ivar">@currentState</span>.<span class="ruby-identifier">finalPattern</span>, <span class="ruby-ivar">@index</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@currentState</span>.<span class="ruby-identifier">finalPattern</span>.<span class="ruby-identifier">length</span>)
+134:       <span class="ruby-keyword kw">end</span>
+135:       <span class="ruby-ivar">@index</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+136:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="super-nit-method" class="method-detail method-alias">
+				<a name="method-i-superInit"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">superInit</span><span
+						class="method-args">(non_deterministic_automaton, alphabet)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+				</div>
+
+				
+
+				
+				<div class="aliases">
+          Alias for: <a href="DeterministicAutomaton.html#method-c-new">new</a>
+				</div>
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="create-method" class="method-detail ">
+				<a name="method-i-create"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">create</span><span
+						class="method-args">(nda, queue)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method handles the whole process of determinisation.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="create-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Automatons.rb, line 141</span>
+141:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>(<span class="ruby-identifier">nda</span>, <span class="ruby-identifier">queue</span>)
+142:       <span class="ruby-keyword kw">while</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">queue</span>.<span class="ruby-identifier">empty?</span>)
+143:         <span class="ruby-identifier">state</span> = <span class="ruby-identifier">queue</span>.<span class="ruby-identifier">dequeue</span> <span class="ruby-comment cmt"># a deterministic state to resolve</span>
+144:         <span class="ruby-identifier">aSize</span> = <span class="ruby-ivar">@alphabet</span>.<span class="ruby-identifier">size</span>
+145:         <span class="ruby-identifier">aSize</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+146:           <span class="ruby-identifier">a</span> = <span class="ruby-ivar">@alphabet</span>[<span class="ruby-identifier">index</span>]
+147:           <span class="ruby-identifier">desc</span> = <span class="ruby-constant">NodeDescriptor</span>.<span class="ruby-identifier">new</span> <span class="ruby-comment cmt"># a descriptor for new deterministic node</span>
+148:           <span class="ruby-identifier">state</span>.<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">labels</span>.<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">label</span><span class="ruby-operator">|</span>
+149:             <span class="ruby-comment cmt">#get non-deterministic node that is described by 'label'</span>
+150:             <span class="ruby-identifier">searchDescriptor</span> = <span class="ruby-constant">NodeDescriptor</span>.<span class="ruby-identifier">new</span>
+151:             <span class="ruby-identifier">searchDescriptor</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">label</span>)
+152:             <span class="ruby-identifier">ndNode</span> = <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">getNode</span>(<span class="ruby-identifier">searchDescriptor</span>)
+153:             <span class="ruby-comment cmt">#if that node is final, the new deterministic node will be final too.</span>
+154:             <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">ndNode</span>.<span class="ruby-identifier">finalPattern</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">nil</span>)
+155:               <span class="ruby-identifier">state</span>.<span class="ruby-identifier">finalPattern</span> = <span class="ruby-identifier">ndNode</span>.<span class="ruby-identifier">finalPattern</span>
+156:             <span class="ruby-keyword kw">end</span>
+157:             <span class="ruby-comment cmt">#get transitions for current alphabet symbol 'a'</span>
+158:             <span class="ruby-comment cmt">#Only non-deterministic node with label '0' may have more than one</span>
+159:             <span class="ruby-comment cmt">#transition for one alphabet symbol</span>
+160:             <span class="ruby-identifier">transitions</span> = <span class="ruby-identifier">ndNode</span>.<span class="ruby-identifier">getTransitionsFor</span>(<span class="ruby-identifier">a</span>)
+161:             <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">transitions</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+162:               <span class="ruby-comment cmt">#if there is no transition at all, it means there should be transition to node '0'</span>
+163:               <span class="ruby-identifier">transitions</span> = [<span class="ruby-constant">Transition</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">a</span>, <span class="ruby-ivar">@node0</span>)]
+164:             <span class="ruby-keyword kw">end</span>
+165:             <span class="ruby-comment cmt">#add each target node label to the descriptor for new deterministic node.</span>
+166:             <span class="ruby-identifier">transitions</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">transition</span><span class="ruby-operator">|</span>
+167:               <span class="ruby-identifier">desc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">transition</span>.<span class="ruby-identifier">targetNode</span>.<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">labels</span>.<span class="ruby-identifier">to_a</span>[<span class="ruby-value">0</span>])
+168:             <span class="ruby-keyword kw">end</span>
+169:           <span class="ruby-keyword kw">end</span>
+170:           <span class="ruby-identifier">newNode</span> = <span class="ruby-identifier">getNode</span>(<span class="ruby-identifier">desc</span>)
+171:           <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">newNode</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+172:             <span class="ruby-identifier">newNode</span> = <span class="ruby-identifier">addNode</span>(<span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">desc</span>))
+173:             <span class="ruby-identifier">queue</span>.<span class="ruby-identifier">enqueue</span>(<span class="ruby-identifier">newNode</span>)
+174:           <span class="ruby-keyword kw">end</span>
+175:           <span class="ruby-identifier">state</span>.<span class="ruby-identifier">addTransition</span>(<span class="ruby-constant">Transition</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">newNode</span>))
+176:         <span class="ruby-keyword kw">end</span>
+177:       <span class="ruby-keyword kw">end</span>
+178:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

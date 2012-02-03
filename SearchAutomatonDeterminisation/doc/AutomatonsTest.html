@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: AutomatonsTest</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./test/AutomatonTest_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/AutomatonTest.rb">test/AutomatonTest.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-getNodeDesc">#getNodeDesc</a></li>
+					
+					<li><a href="#method-i-getTransitionTarget">#getTransitionTarget</a></li>
+					
+					<li><a href="#method-i-test_automaton">#test_automaton</a></li>
+					
+					<li><a href="#method-i-test_deterministic_automaton">#test_deterministic_automaton</a></li>
+					
+					<li><a href="#method-i-test_more_complex_deterministic_automaton">#test_more_complex_deterministic_automaton</a></li>
+					
+					<li><a href="#method-i-test_non_deterministic_automaton">#test_non_deterministic_automaton</a></li>
+					
+					<li><a href="#method-i-test_search">#test_search</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./bin/fileToSearch_txt.html">fileToSearch.txt</a></li>
+				
+					<li class="file"><a href="./bin/testInput_txt.html">testInput.txt</a></li>
+				
+					<li class="file"><a href="./test/fileToSearch_txt.html">fileToSearch.txt</a></li>
+				
+					<li class="file"><a href="./test/testInput_txt.html">testInput.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Automatons.html">Automatons</a></li>
+				
+					<li><a href="./Automatons/Automaton.html">Automatons::Automaton</a></li>
+				
+					<li><a href="./Automatons/DeterministicAutomaton.html">Automatons::DeterministicAutomaton</a></li>
+				
+					<li><a href="./Automatons/Label.html">Automatons::Label</a></li>
+				
+					<li><a href="./Automatons/Node.html">Automatons::Node</a></li>
+				
+					<li><a href="./Automatons/NodeDescriptor.html">Automatons::NodeDescriptor</a></li>
+				
+					<li><a href="./Automatons/NonDeterministicAutomaton.html">Automatons::NonDeterministicAutomaton</a></li>
+				
+					<li><a href="./Automatons/Printer.html">Automatons::Printer</a></li>
+				
+					<li><a href="./Automatons/SearchListener.html">Automatons::SearchListener</a></li>
+				
+					<li><a href="./Automatons/Transition.html">Automatons::Transition</a></li>
+				
+					<li><a href="./AlphabetManagement.html">AlphabetManagement</a></li>
+				
+					<li><a href="./AlphabetManagement/Alphabet.html">AlphabetManagement::Alphabet</a></li>
+				
+					<li><a href="./AlphabetManagement/AlphabetItem.html">AlphabetManagement::AlphabetItem</a></li>
+				
+					<li><a href="./InputHandling.html">InputHandling</a></li>
+				
+					<li><a href="./InputHandling/Input.html">InputHandling::Input</a></li>
+				
+					<li><a href="./InputHandling/InputLoader.html">InputHandling::InputLoader</a></li>
+				
+					<li><a href="./Queues.html">Queues</a></li>
+				
+					<li><a href="./Queues/NodeQueue.html">Queues::NodeQueue</a></li>
+				
+					<li><a href="./SearchAutomatonDeterminisation.html">SearchAutomatonDeterminisation</a></li>
+				
+					<li><a href="./SearchAutomatonDeterminisation/MainClass.html">SearchAutomatonDeterminisation::MainClass</a></li>
+				
+					<li><a href="./AlphabetTest.html">AlphabetTest</a></li>
+				
+					<li><a href="./AutomatonsTest.html">AutomatonsTest</a></li>
+				
+					<li><a href="./InputTest.html">InputTest</a></li>
+				
+					<li><a href="./NodeTest.html">NodeTest</a></li>
+				
+					<li><a href="./PrinterTest.html">PrinterTest</a></li>
+				
+					<li><a href="./TestListener.html">TestListener</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">AutomatonsTest</h1>
+
+		<div id="description">
+			<p>
+This class contains various tests for <a
+href="Automatons.html">Automatons</a>
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="get-ode-esc-method" class="method-detail ">
+				<a name="method-i-getNodeDesc"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">getNodeDesc</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="get-ode-esc-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/AutomatonTest.rb, line 42</span>
+42:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">getNodeDesc</span>(<span class="ruby-identifier">node</span>)
+43:     <span class="ruby-identifier">node</span>.<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">labels</span>.<span class="ruby-identifier">to_a</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">id</span>
+44:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-ransition-arget-method" class="method-detail ">
+				<a name="method-i-getTransitionTarget"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">getTransitionTarget</span><span
+						class="method-args">(node, alphabetItem, arrayIndex)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="get-ransition-arget-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/AutomatonTest.rb, line 46</span>
+46:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node</span>, <span class="ruby-identifier">alphabetItem</span>, <span class="ruby-identifier">arrayIndex</span>)
+47:     <span class="ruby-identifier">node</span>.<span class="ruby-identifier">getTransitionsFor</span>(<span class="ruby-identifier">alphabetItem</span>)[<span class="ruby-identifier">arrayIndex</span>].<span class="ruby-identifier">targetNode</span>
+48:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-automaton-method" class="method-detail ">
+				<a name="method-i-test_automaton"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_automaton</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-automaton-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/AutomatonTest.rb, line 21</span>
+21:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_automaton</span>
+22:     <span class="ruby-identifier">alphabet</span> = <span class="ruby-constant">Alphabet</span>.<span class="ruby-identifier">new</span>([<span class="ruby-value str">&quot;a&quot;</span>,<span class="ruby-value str">&quot;b&quot;</span>])
+23:     <span class="ruby-identifier">a</span> = <span class="ruby-constant">Automaton</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">alphabet</span>)
+24:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">a</span>.<span class="ruby-identifier">size</span>)
+25:     
+26:     <span class="ruby-identifier">nodes</span> = []
+27:     <span class="ruby-value">3</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+28:       <span class="ruby-identifier">descriptor</span> = <span class="ruby-constant">NodeDescriptor</span>.<span class="ruby-identifier">new</span>
+29:       <span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">index</span>))
+30:       <span class="ruby-identifier">node</span> = <span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">descriptor</span>)
+31:       <span class="ruby-identifier">nodes</span>[<span class="ruby-identifier">index</span>] = <span class="ruby-identifier">node</span>
+32:       <span class="ruby-identifier">a</span>.<span class="ruby-identifier">addNode</span>(<span class="ruby-identifier">node</span>)
+33:     <span class="ruby-keyword kw">end</span>
+34:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">3</span>, <span class="ruby-identifier">a</span>.<span class="ruby-identifier">size</span>)
+35:     <span class="ruby-identifier">descriptor</span> = <span class="ruby-constant">NodeDescriptor</span>.<span class="ruby-identifier">new</span>
+36:     <span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>))
+37:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">nodes</span>[<span class="ruby-value">1</span>], <span class="ruby-identifier">a</span>.<span class="ruby-identifier">getNode</span>(<span class="ruby-identifier">descriptor</span>))
+38:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">nodes</span>[<span class="ruby-value">0</span>], <span class="ruby-identifier">a</span>.<span class="ruby-identifier">getNodeAt</span>(<span class="ruby-value">0</span>))
+39:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">nodes</span>[<span class="ruby-value">2</span>], <span class="ruby-identifier">a</span>.<span class="ruby-identifier">getNodeAt</span>(<span class="ruby-value">2</span>))
+40:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-deterministic-automaton-method" class="method-detail ">
+				<a name="method-i-test_deterministic_automaton"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_deterministic_automaton</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-deterministic-automaton-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/AutomatonTest.rb, line 74</span>
+74:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_deterministic_automaton</span>
+75:     <span class="ruby-identifier">alphabet</span> = <span class="ruby-constant">Alphabet</span>.<span class="ruby-identifier">new</span>([<span class="ruby-value str">&quot;a&quot;</span>,<span class="ruby-value str">&quot;b&quot;</span>])
+76:     <span class="ruby-identifier">nda</span> = <span class="ruby-constant">NonDeterministicAutomaton</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">alphabet</span>)
+77:     <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">addPattern</span>(<span class="ruby-value str">&quot;bba&quot;</span>)
+78:     <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">finalize</span>
+79:     <span class="ruby-identifier">da</span> = <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">makeDeterministic</span>
+80:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">4</span>,<span class="ruby-identifier">da</span>.<span class="ruby-identifier">size</span>)
+81:     <span class="ruby-identifier">strings</span> = [<span class="ruby-value str">&quot;[0]&quot;</span>, <span class="ruby-value str">&quot;[0,1]&quot;</span>, <span class="ruby-value str">&quot;[0,1,2]&quot;</span>, <span class="ruby-value str">&quot;[0,3]&quot;</span>]
+82:     <span class="ruby-value">4</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+83:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">strings</span>[<span class="ruby-identifier">index</span>], <span class="ruby-identifier">da</span>.<span class="ruby-identifier">getNodeAt</span>(<span class="ruby-identifier">index</span>).<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">to_s</span>)
+84:     <span class="ruby-keyword kw">end</span>
+85:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-more-complex-deterministic-automaton-method" class="method-detail ">
+				<a name="method-i-test_more_complex_deterministic_automaton"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_more_complex_deterministic_automaton</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-more-complex-deterministic-automaton-source">
+<pre>
+     <span class="ruby-comment cmt"># File test/AutomatonTest.rb, line 87</span>
+ 87:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_more_complex_deterministic_automaton</span>
+ 88:     <span class="ruby-identifier">alphabet</span> = <span class="ruby-constant">Alphabet</span>.<span class="ruby-identifier">new</span>([<span class="ruby-value str">&quot;a&quot;</span>,<span class="ruby-value str">&quot;b&quot;</span>])
+ 89:     <span class="ruby-identifier">nda</span> = <span class="ruby-constant">NonDeterministicAutomaton</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">alphabet</span>)
+ 90:     <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">addPattern</span>(<span class="ruby-value str">&quot;abba&quot;</span>)
+ 91:     <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">addPattern</span>(<span class="ruby-value str">&quot;bbb&quot;</span>)
+ 92:     <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">finalize</span>
+ 93:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">8</span>,<span class="ruby-identifier">nda</span>.<span class="ruby-identifier">size</span>)
+ 94:     <span class="ruby-identifier">da</span> = <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">makeDeterministic</span>
+ 95:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">8</span>, <span class="ruby-identifier">da</span>.<span class="ruby-identifier">size</span>)
+ 96:     <span class="ruby-identifier">strings</span> = [<span class="ruby-value str">&quot;[0]&quot;</span>,<span class="ruby-value str">&quot;[0,1]&quot;</span>,<span class="ruby-value str">&quot;[0,5]&quot;</span>,<span class="ruby-value str">&quot;[0,2,5]&quot;</span>,<span class="ruby-value str">&quot;[0,5,6]&quot;</span>,<span class="ruby-value str">&quot;[0,3,5,6]&quot;</span>,<span class="ruby-value str">&quot;[0,5,6,7]&quot;</span>,<span class="ruby-value str">&quot;[0,1,4]&quot;</span>]
+ 97:     <span class="ruby-value">8</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+ 98:       <span class="ruby-comment cmt">#p &quot;#{da.getNodeAt(index).descriptor.to_s} (#{da.getNodeAt(index).finalPattern.to_s})&quot;</span>
+ 99:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">strings</span>[<span class="ruby-identifier">index</span>], <span class="ruby-identifier">da</span>.<span class="ruby-identifier">getNodeAt</span>(<span class="ruby-identifier">index</span>).<span class="ruby-identifier">descriptor</span>.<span class="ruby-identifier">to_s</span>)
+100:     <span class="ruby-keyword kw">end</span>
+101:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-non-deterministic-automaton-method" class="method-detail ">
+				<a name="method-i-test_non_deterministic_automaton"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_non_deterministic_automaton</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-non-deterministic-automaton-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/AutomatonTest.rb, line 50</span>
+50:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_non_deterministic_automaton</span>
+51:     <span class="ruby-identifier">alphabet</span> = <span class="ruby-constant">Alphabet</span>.<span class="ruby-identifier">new</span>([<span class="ruby-value str">&quot;a&quot;</span>,<span class="ruby-value str">&quot;b&quot;</span>])
+52:     <span class="ruby-identifier">a</span> = <span class="ruby-constant">NonDeterministicAutomaton</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">alphabet</span>)
+53:     <span class="ruby-identifier">a</span>.<span class="ruby-identifier">addPattern</span>(<span class="ruby-value str">&quot;aba&quot;</span>)
+54:     <span class="ruby-identifier">a</span>.<span class="ruby-identifier">finalize</span>
+55:     <span class="ruby-identifier">aItem</span> = <span class="ruby-constant">AlphabetItem</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;a&quot;</span>)
+56:     <span class="ruby-identifier">bItem</span> = <span class="ruby-constant">AlphabetItem</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;b&quot;</span>)
+57:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">4</span>, <span class="ruby-identifier">a</span>.<span class="ruby-identifier">size</span>)
+58:     <span class="ruby-identifier">node0</span> = <span class="ruby-identifier">a</span>.<span class="ruby-identifier">getNodeAt</span>(<span class="ruby-value">0</span>)
+59:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1</span>, <span class="ruby-identifier">getNodeDesc</span>(<span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node0</span>, <span class="ruby-identifier">aItem</span>, <span class="ruby-value">0</span>)))
+60:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">getNodeDesc</span>(<span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node0</span>, <span class="ruby-identifier">aItem</span>, <span class="ruby-value">1</span>)))
+61:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">getNodeDesc</span>(<span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node0</span>, <span class="ruby-identifier">bItem</span>, <span class="ruby-value">0</span>)))
+62:     <span class="ruby-identifier">node1</span> = <span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node0</span>, <span class="ruby-identifier">aItem</span>, <span class="ruby-value">0</span>)
+63:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">2</span>, <span class="ruby-identifier">getNodeDesc</span>(<span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node1</span>, <span class="ruby-identifier">bItem</span>, <span class="ruby-value">0</span>)))
+64:     <span class="ruby-identifier">node2</span> = <span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node1</span>, <span class="ruby-identifier">bItem</span>, <span class="ruby-value">0</span>)
+65:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">3</span>, <span class="ruby-identifier">getNodeDesc</span>(<span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node2</span>, <span class="ruby-identifier">aItem</span>, <span class="ruby-value">0</span>)))
+66:     <span class="ruby-identifier">node3</span> = <span class="ruby-identifier">getTransitionTarget</span>(<span class="ruby-identifier">node2</span>, <span class="ruby-identifier">aItem</span>, <span class="ruby-value">0</span>)
+67:     
+68:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;aba&quot;</span>, <span class="ruby-identifier">node3</span>.<span class="ruby-identifier">finalPattern</span>)
+69:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">node0</span>.<span class="ruby-identifier">finalPattern</span>)
+70:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">node1</span>.<span class="ruby-identifier">finalPattern</span>)
+71:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">node2</span>.<span class="ruby-identifier">finalPattern</span>)
+72:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-search-method" class="method-detail ">
+				<a name="method-i-test_search"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_search</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-search-source">
+<pre>
+     <span class="ruby-comment cmt"># File test/AutomatonTest.rb, line 103</span>
+103:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_search</span>
+104:     <span class="ruby-identifier">text</span> = <span class="ruby-value str">&quot;aababbaababbbabbabbbaa&quot;</span>
+105:     <span class="ruby-identifier">alphabet</span> = <span class="ruby-constant">Alphabet</span>.<span class="ruby-identifier">new</span>([<span class="ruby-value str">&quot;a&quot;</span>,<span class="ruby-value str">&quot;b&quot;</span>])
+106:     <span class="ruby-identifier">nda</span> = <span class="ruby-constant">NonDeterministicAutomaton</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">alphabet</span>)
+107:     <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">addPattern</span>(<span class="ruby-value str">&quot;abba&quot;</span>)
+108:     <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">addPattern</span>(<span class="ruby-value str">&quot;bbb&quot;</span>)
+109:     <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">finalize</span>
+110:     <span class="ruby-identifier">da</span> = <span class="ruby-identifier">nda</span>.<span class="ruby-identifier">makeDeterministic</span>
+111:     <span class="ruby-identifier">listener</span> = <span class="ruby-constant">TestListener</span>.<span class="ruby-identifier">new</span>
+112:     <span class="ruby-identifier">da</span>.<span class="ruby-identifier">beginSearch</span>(<span class="ruby-identifier">listener</span>)
+113:     <span class="ruby-identifier">text</span>.<span class="ruby-identifier">length</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+114:       <span class="ruby-identifier">da</span>.<span class="ruby-identifier">changeState</span>(<span class="ruby-identifier">alphabet</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">text</span>[<span class="ruby-identifier">index</span>]))
+115:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;abba&quot;</span>, <span class="ruby-identifier">listener</span>.<span class="ruby-identifier">pattern</span>) <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">6</span>)
+116:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">3</span>, <span class="ruby-identifier">listener</span>.<span class="ruby-identifier">index</span>) <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">6</span>)
+117:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;bbb&quot;</span>, <span class="ruby-identifier">listener</span>.<span class="ruby-identifier">pattern</span>) <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">12</span>)
+118:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">10</span>, <span class="ruby-identifier">listener</span>.<span class="ruby-identifier">index</span>) <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">12</span>)
+119:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;abba&quot;</span>, <span class="ruby-identifier">listener</span>.<span class="ruby-identifier">pattern</span>) <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">16</span>)
+120:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">13</span>, <span class="ruby-identifier">listener</span>.<span class="ruby-identifier">index</span>) <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">16</span>)
+121:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;bbb&quot;</span>, <span class="ruby-identifier">listener</span>.<span class="ruby-identifier">pattern</span>) <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">19</span>)
+122:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">17</span>, <span class="ruby-identifier">listener</span>.<span class="ruby-identifier">index</span>) <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-value">19</span>)
+123:     <span class="ruby-keyword kw">end</span>
+124:     
+125:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

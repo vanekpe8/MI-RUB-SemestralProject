@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Automatons::Automaton</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/Automatons_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/Automatons.rb">lib/Automatons.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-addNode">#addNode</a></li>
+					
+					<li><a href="#method-i-getNode">#getNode</a></li>
+					
+					<li><a href="#method-i-getNodeAt">#getNodeAt</a></li>
+					
+					<li><a href="#method-i-size">#size</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../bin/fileToSearch_txt.html">fileToSearch.txt</a></li>
+				
+					<li class="file"><a href="../bin/testInput_txt.html">testInput.txt</a></li>
+				
+					<li class="file"><a href="../test/fileToSearch_txt.html">fileToSearch.txt</a></li>
+				
+					<li class="file"><a href="../test/testInput_txt.html">testInput.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Automatons.html">Automatons</a></li>
+				
+					<li><a href="../Automatons/Automaton.html">Automatons::Automaton</a></li>
+				
+					<li><a href="../Automatons/DeterministicAutomaton.html">Automatons::DeterministicAutomaton</a></li>
+				
+					<li><a href="../Automatons/Label.html">Automatons::Label</a></li>
+				
+					<li><a href="../Automatons/Node.html">Automatons::Node</a></li>
+				
+					<li><a href="../Automatons/NodeDescriptor.html">Automatons::NodeDescriptor</a></li>
+				
+					<li><a href="../Automatons/NonDeterministicAutomaton.html">Automatons::NonDeterministicAutomaton</a></li>
+				
+					<li><a href="../Automatons/Printer.html">Automatons::Printer</a></li>
+				
+					<li><a href="../Automatons/SearchListener.html">Automatons::SearchListener</a></li>
+				
+					<li><a href="../Automatons/Transition.html">Automatons::Transition</a></li>
+				
+					<li><a href="../AlphabetManagement.html">AlphabetManagement</a></li>
+				
+					<li><a href="../AlphabetManagement/Alphabet.html">AlphabetManagement::Alphabet</a></li>
+				
+					<li><a href="../AlphabetManagement/AlphabetItem.html">AlphabetManagement::AlphabetItem</a></li>
+				
+					<li><a href="../InputHandling.html">InputHandling</a></li>
+				
+					<li><a href="../InputHandling/Input.html">InputHandling::Input</a></li>
+				
+					<li><a href="../InputHandling/InputLoader.html">InputHandling::InputLoader</a></li>
+				
+					<li><a href="../Queues.html">Queues</a></li>
+				
+					<li><a href="../Queues/NodeQueue.html">Queues::NodeQueue</a></li>
+				
+					<li><a href="../SearchAutomatonDeterminisation.html">SearchAutomatonDeterminisation</a></li>
+				
+					<li><a href="../SearchAutomatonDeterminisation/MainClass.html">SearchAutomatonDeterminisation::MainClass</a></li>
+				
+					<li><a href="../AlphabetTest.html">AlphabetTest</a></li>
+				
+					<li><a href="../AutomatonsTest.html">AutomatonsTest</a></li>
+				
+					<li><a href="../InputTest.html">InputTest</a></li>
+				
+					<li><a href="../NodeTest.html">NodeTest</a></li>
+				
+					<li><a href="../PrinterTest.html">PrinterTest</a></li>
+				
+					<li><a href="../TestListener.html">TestListener</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Automatons::Automaton</h1>
+
+		<div id="description">
+			<p>
+This class is a basic automaton class with functionality common for both
+<a href="NonDeterministicAutomaton.html">NonDeterministicAutomaton</a> and
+<a href="DeterministicAutomaton.html">DeterministicAutomaton</a>
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(alphabet)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new instance of <a href="Automaton.html">Automaton</a> and stores
+given alphabet for further usage.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Automatons.rb, line 12</span>
+12:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">alphabet</span>)
+13:       <span class="ruby-ivar">@alphabet</span> = <span class="ruby-identifier">alphabet</span>
+14:       <span class="ruby-ivar">@nodes</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+15:       <span class="ruby-ivar">@nodes_array</span> = []
+16:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="add-ode-method" class="method-detail ">
+				<a name="method-i-addNode"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">addNode</span><span
+						class="method-args">(node)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Adds given node to this automaton
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="add-ode-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Automatons.rb, line 24</span>
+24:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">addNode</span>(<span class="ruby-identifier">node</span>)
+25:       <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">node</span>.<span class="ruby-identifier">descriptor</span>] = <span class="ruby-identifier">node</span>
+26:       <span class="ruby-ivar">@nodes_array</span>[<span class="ruby-ivar">@nodes_array</span>.<span class="ruby-identifier">count</span>] = <span class="ruby-identifier">node</span>
+27:       <span class="ruby-identifier">node</span>
+28:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-ode-method" class="method-detail ">
+				<a name="method-i-getNode"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">getNode</span><span
+						class="method-args">(descriptor)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns node which descriptor is the same as given descriptor
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-ode-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Automatons.rb, line 31</span>
+31:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">getNode</span>(<span class="ruby-identifier">descriptor</span>)
+32:       <span class="ruby-ivar">@nodes</span>[<span class="ruby-identifier">descriptor</span>]
+33:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-ode-t-method" class="method-detail ">
+				<a name="method-i-getNodeAt"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">getNodeAt</span><span
+						class="method-args">(index)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns node by index
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-ode-t-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Automatons.rb, line 36</span>
+36:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">getNodeAt</span>(<span class="ruby-identifier">index</span>)
+37:       <span class="ruby-ivar">@nodes_array</span>[<span class="ruby-identifier">index</span>]
+38:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="size-method" class="method-detail ">
+				<a name="method-i-size"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">size</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns number of nodes in this automaton
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="size-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Automatons.rb, line 19</span>
+19:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">size</span>
+20:       <span class="ruby-ivar">@nodes</span>.<span class="ruby-identifier">size</span>
+21:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
