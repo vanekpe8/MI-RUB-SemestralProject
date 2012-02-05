@@ -224,7 +224,7 @@ and a File
 26:                                      <span class="ruby-identifier">input</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:searchPatterns</span>) <span class="ruby-operator">&amp;&amp;</span>
 27:                                      <span class="ruby-identifier">input</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:file</span>)
 28:       <span class="ruby-identifier">str</span> = <span class="ruby-identifier">file</span>.<span class="ruby-identifier">readline</span>.<span class="ruby-identifier">chomp</span>
-29:       <span class="ruby-identifier">input</span>.<span class="ruby-identifier">alphabet</span> = <span class="ruby-identifier">str</span>.<span class="ruby-identifier">split</span>
+29:       <span class="ruby-identifier">input</span>.<span class="ruby-identifier">alphabet</span> = <span class="ruby-identifier">str</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'|'</span>)
 30:       <span class="ruby-identifier">str</span> = <span class="ruby-identifier">file</span>.<span class="ruby-identifier">readline</span>.<span class="ruby-identifier">chomp</span>
 31:       <span class="ruby-identifier">input</span>.<span class="ruby-identifier">searchPatterns</span> = <span class="ruby-identifier">str</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'|'</span>)
 32:       <span class="ruby-identifier">str</span> = <span class="ruby-identifier">file</span>.<span class="ruby-identifier">readline</span>.<span class="ruby-identifier">chomp</span>

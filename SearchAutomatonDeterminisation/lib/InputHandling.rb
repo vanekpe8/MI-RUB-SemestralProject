@@ -26,7 +26,7 @@ module InputHandling
                                      input.respond_to?(:searchPatterns) &&
                                      input.respond_to?(:file)
       str = file.readline.chomp
-      input.alphabet = str.split
+      input.alphabet = str.split('|')
       str = file.readline.chomp
       input.searchPatterns = str.split('|')
       str = file.readline.chomp

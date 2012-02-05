@@ -1,8 +1,8 @@
-Fri, 03 Feb 2012 11:02:24 +0100
-./bin/SearchAutomatonDeterminisation.rb	Thu, 02 Feb 2012 19:24:08 +0100
-./bin/testInput.txt	Sun, 29 Jan 2012 14:30:56 +0100
-./bin/fileToSearch.txt	Sun, 29 Jan 2012 14:32:18 +0100
-./lib/InputHandling.rb	Thu, 02 Feb 2012 19:58:42 +0100
+Sun, 05 Feb 2012 11:13:53 +0100
+./bin/SearchAutomatonDeterminisation.rb	Fri, 03 Feb 2012 17:28:40 +0100
+./bin/testInput.txt	Sun, 05 Feb 2012 11:11:26 +0100
+./bin/fileToSearch.txt	Sun, 05 Feb 2012 11:12:38 +0100
+./lib/InputHandling.rb	Sun, 05 Feb 2012 11:09:22 +0100
 ./lib/Alphabet.rb	Thu, 02 Feb 2012 19:47:58 +0100
 ./lib/Node.rb	Fri, 03 Feb 2012 11:01:48 +0100
 ./lib/Queues.rb	Thu, 02 Feb 2012 20:02:28 +0100
