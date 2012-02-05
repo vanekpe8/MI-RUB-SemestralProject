@@ -8,12 +8,12 @@ Popis: Práce je variací na nabídnuté téma "Determinizace konečných automa
        není možné implementovat aplikaci pro determinizaci automatů obecně.
 
        Současná implementace má pár omezení:
-       1. znaky abecedy mohou být opravdu jen znaky (např. 'a', 'b', 'c' nebo '&'),
+       1. znaky abecedy mohou být opravdu jen znaky (např. 'a', 'b', 'c', ' ' nebo '&'),
           ale ne série znaků (např. 'a0', 'a1' nebo 'a2' - které mohou tvořit 
           ohodnocenou abecedu např u stromových vyhledávacích automatů.
-       2. jako znak abecedy nelze použít mezeru, tabulátor nebo jiné neviditelné znaky
-          (aplikace je neumí načíst). Stejně tak nesmí mezery obsahovat prohledávaný soubor
-          (znaky zakončující žádek nevadí - jsou ignorovány)
+       2. jako znak abecedy nelze použít, tabulátor nebo jiné neviditelné znaky
+          (aplikace je neumí načíst). Stejně tak nelze použít jako znak abecedy svislítko
+          '|'. Mezera je však přípustná.
 
        Aplikace vezme vstup ze souboru (viz. dále), vytvoří nedeterministický automat, 
        zdeterminizuje ho a použije ho pro vyhledávání zadaných vzorů v zadaném souboru.
